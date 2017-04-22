@@ -11,3 +11,16 @@ var myHTML = document.querySelector('html');
 myHTML.onclick = function() {
   alert('HeeHee, that tickles!')
 }
+
+
+//selecting all img on index.html
+var myImage = document.querySelector('img');
+//when user clicks on image, it switches between star_banner and astronaut
+myImage.onclick = function() {
+    var mySrc = myImage.getAttribute('src');
+    if(mySrc === "images/stars_long_banner.jpg") {
+      myImage.setAttribute ('src','images/astronaut_banner.jpg');
+    } else {
+      myImage.setAttribute ('src','images/stars_long_banner.jpg');
+    }
+}
